@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仿小米官网导航栏</title>
+  <!-- 引入图标cdn -->
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(216, 226, 225);
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      width: 1260px;
+      height: 460px;
+    }
+
+    ul {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      width: 234px;
+      height: calc(100% - 40px);
+      padding: 20px 0;
+      background-color: rgb(105, 101, 101);
+
+    }
+
+    li {
+      opacity: .8;
+      list-style: none;
+      height: calc(calc(100% - 40px) / 9);
+      width: auto;
+      background-color: rgba(105, 101, 101, .81);
+      line-height: calc(calc(460px - 40px) / 9);
+      padding-left: 30px;
+      color: #fff;
+      font-size: 14px;
+      position: relative;
+      transition: all .3s;
+    }
+
+    li i {
+      color: #fff;
+      font-size: 16px;
+      display: inline;
+    }
+
+    li>.ico {
+      position: absolute;
+      width: auto;
+      z-index: 1;
+      top: 0;
+      right: 22px;
+    }
+
+    li:hover {
+      background-color: #ff6700;
+    }
+
+    li:hover+.content {
+      display: block;
+    }
+
+    .content:hover {
+      display: block;
+    }
+
+    .content {
+      background-color: #fff;
+      position: absolute;
+      left: 234px;
+      top: 0;
+      height: 100%;
+      width: calc(1260px - 234px);
+      display: none;
+      font-size: 130px;
+      text-align: center;
+      line-height: 460px;
+      /* 加个阴影 */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <div class="box">手机</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">1</div>
+      <li>
+        <div class="box">电视</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">2</div>
+
+      <li>
+        <div class="box">笔记本 平板</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">3</div>
+
+      <li>
+        <div class="box">出行 穿戴</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">4</div>
+
+      <li>
+        <div class="box">耳机 音箱</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">4</div>
+
+      <li>
+        <div class="box">家电</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">6</div>
+
+      <li>
+        <div class="box">智能 路由器</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">7</div>
+
+      <li>
+        <div class="box">电源 配件</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">8</div>
+
+      <li>
+        <div class="box">健康儿童</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">9</div>
+
+      <li>
+        <div class="box">生活 箱包</div>
+        <div class="ico"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </li>
+      <div class="content">10</div>
+
+    </ul>
+  </nav>
+</body>
+
+</html>
