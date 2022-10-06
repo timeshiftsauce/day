@@ -6,11 +6,11 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "1279408",
-      "name": "搜索",
-      "font_class": "sousuo",
-      "unicode": "e653",
-      "unicode_decimal": 58963
+      "icon_id": "591727",
+      "name": "wxb搜索推广",
+      "font_class": "wxbsousuotuiguang",
+      "unicode": "e620",
+      "unicode_decimal": 58912
     }
   ]
 }
