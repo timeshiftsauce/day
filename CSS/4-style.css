@@ -2,13 +2,60 @@
   /* 清除内，外边距 */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #5D576B;
+  background-color: #8884FF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.search-box {
+  background: #E8CEE4;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+  background: white;
+}
+.search-btn {
+  color: #8884FF;
+  float: right;
+  width: 40px;
+  border-radius: 50%;
+  background: #E8CEE4;
+  display: flex;
+  transition: 0.4s;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: rgb(84, 84, 84);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+.iconfont {
+  display: block;
+  width: 30px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px !important;
+  font-weight: 900;
 }
