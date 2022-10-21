@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>简单的导航栏</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f1b8e4;
+        width: 100vw;
+        height: 100vh;
+      }
+      nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: #fec433;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .navbody{
+        /* border:1px red solid; */
+        margin: 0 10px;
+        width: 1200px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+
+      }
+      img{
+        width: 100px;
+        height: 50%;
+      }
+      .navbody > ul{
+        display: flex;
+        width: calc(100% - 100px);
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .navbody > ul > li{
+        margin: 5px;
+        font-weight: 500;
+        list-style: none;
+        color: aliceblue;
+        font-size: 22px;
+        height: 100%;
+        flex: 1;
+        text-align: center;
+        line-height: 64px;
+        /* 居中 */
+        /* transition: all .3s; */
+      }
+      .navbody > ul > li:hover{
+        opacity: 1;
+        background-color: #f6b206;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbody">
+        <!-- logo -->
+        <img src="./img/logo.svg" alt="logo" class="img">
+        <ul>
+          <li>导航1</li>
+          <li>导航2</li>
+          <li>导航3</li>
+          <li>导航4</li>
+          <li>导航5</li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
